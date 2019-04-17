@@ -1,0 +1,664 @@
+@import url(../src/geometria/geometria.css);
+
+*{
+    margin: 0;
+}
+html{
+    font-size: 10px;
+}
+h2{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 2.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+body{
+    position: relative;
+    width: 100%;
+    background: #141420;
+}
+header,main,footer{
+    position: relative;
+    width: 100%;
+}
+.head{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: #191a29;
+    height: 100px;
+    justify-content: space-between;
+}
+.head .left_box{
+    position: relative;
+    display: flex;
+    width: 53.5%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_box .logo{
+    width: 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 155px;
+    height: 70px;
+}
+.left_box nav{
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 1.6rem;
+    font-weight: 500;
+    width: 450px;
+    padding: 0;
+}
+nav li{
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+nav li:hover{
+    cursor: pointer;
+}
+nav li:hover:after, nav li.active:after{
+    content: '';
+    background-color: #28e4fd;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0 8px rgba(40, 228, 253, 0.5);
+    bottom: 0;
+}
+.head .right_box{
+    position: relative;
+    display: flex;
+    width: 46.5%;
+    height: 100%;
+    background: #212340;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile{
+    position: relative;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+}
+.profile span{
+    text-transform: uppercase;
+    opacity: 0.2;
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.profile span:hover{
+    cursor: pointer;
+}
+.profile .steam_logo{
+    position: relative;
+    display: flex;
+    width: 158px;
+    height: 68px;
+    background: url("../img/steam_logo.png") center no-repeat;
+    background-size: contain;
+}
+.profile .steam_logo:hover{
+    background: url("../img/steam_logo_hover.png") center no-repeat;
+    cursor: pointer;
+}
+.right_box .vk{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    margin-right: 50px;
+}
+.right_box .vk:hover>.vk_normal{
+    display: none;
+}
+.right_box .vk_hover{
+    display: none;
+}
+.right_box .vk:hover>.vk_hover{
+    display: flex;
+    cursor: pointer;
+}
+.right_box .vk_hover{
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+.right_box .vk_hover_main{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 1px);
+    cursor: pointer;
+}
+.right_box .vk_hover_light{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+.open_now{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.sale{
+    position: relative;
+    display: flex;
+    height: 540px;
+    background-color: #191a29;
+    background-image: url("../img/sale_back.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 100%;
+}
+.sale_contain{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: space-between;
+}
+.sale_txt{
+    position: relative;
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+}
+.sale_txt .row-1{
+    text-shadow: 0 0 47px rgba(0, 168, 255, 0.29);
+    color: #28e4fd;
+    font-family: "ft 40- Roman";
+    font-size: 27.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.sale_txt .row-2{
+    opacity: 0.4;
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-top: -25px;
+}
+.sale_txt .sale_box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panda_case{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: url("../img/padna_case_back.png") top no-repeat;
+    height: 560px;
+}
+.panda_case_contain{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.panda_case_box{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.case_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 230px;
+}
+.case_img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+.case_desc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+.case_box .row-1{
+    color: #ffdd2e;
+    font-family: Geometria;
+    font-size: 20px;
+    font-weight: 700;
+}
+.case_box .row-2{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.trend_case{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    background: url("../img/trend_case_back_2k.png") center no-repeat;
+    height: 1449px;
+}
+.trend_case_contain{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+}
+.trend_case_box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 7% auto 3%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1100px;
+}
+.trend_case_more{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.trend_case_more span{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: 500;
+}
+.arrow_down{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #191a29;
+    border-radius: 50%;
+}
+.arrow_down img{
+    position: relative;
+    display: flex;
+    margin-top: 10%;
+}
+.marvel_case{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/marvel_back_2k.png") center no-repeat;
+    height: 540px;
+}
+.marvel_case_contain{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    background: url("../img/marvel_back_light.png") top no-repeat;
+    align-items: center;
+    justify-content: space-around;
+}
+.slider{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background: url("../img/slider_2k_slide_1.png") center no-repeat;
+}
+.random_quality{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: url("../img/random_quality_back_2k.png") center no-repeat;
+    height: 1449px;
+}
+.random_quality_contain{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.random_quality_case_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 7% auto 3%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1100px;
+}
+.random_quality_more{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.random_quality_more span{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: 500;
+}
+.wheel{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url("../img/wheel_back_2k.png") center no-repeat;
+    height: 600px;
+}
+.wheel_about{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wheel_contain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wheel_play{
+    position: absolute;
+    display: flex;
+    top: 37%;
+    left: 0;
+}
+.wheel_about img{
+    margin-right: 10px;
+}
+.wheel_about span{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 20px;
+    font-weight: 500;
+}
+.wheel_about span.five_k{
+    color: #ffe227;
+}
+.random_type{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: url("../img/random_type_back_2k.png") center no-repeat;
+    height: 1449px;
+}
+.random_type_contain{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.random_type_case_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 7% auto 3%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1100px;
+}
+.random_type_more{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.random_type_more span{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: 500;
+}
+.game{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: url("../img/game_case_back_2k.png") center no-repeat;
+    height: 1449px;
+}
+.game_contain{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.game_case_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 7% auto 3%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1100px;
+}
+.game_more{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.game_more span{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: 500;
+}
+.game_collect{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: url("../img/game_collect_back_2k.png") center no-repeat;
+    height: 1440px;
+}
+.game_collect_contain{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.game_collect_case_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 7% auto 3%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1100px;
+}
+.game_collect_more{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.game_collect_more span{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: 500;
+}
+.closer{
+    position: relative;
+    display: flex;
+    background: url("../img/footer_back.png") center no-repeat;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.closer_contain{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    justify-content: space-between;
+}
+.statistic{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.stat_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.stat_txt{
+    opacity: 0.2;
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 20px;
+    font-weight: 500;
+}
+.stat_numb{
+    text-shadow: 0 0 10px rgba(40, 228, 253, 0.3);
+    color: #28e4fd;
+    font-family: "ft 40- Roman";
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.profile_bot{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile_bot span{
+    opacity: 0.2;
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.profile_bot .steam_logo{
+    position: relative;
+    display: flex;
+    width: 192px;
+    height: 78px;
+    background: url("../img/steam_logo_bot.png") center no-repeat;
+    background-size: contain;
+}
+.profile_bot .steam_logo:hover{
+    background: url("../img/steam_logo_bot_hover.png") center no-repeat;
+    cursor: pointer;
+}
+footer{
+    background-color: #191a29;
+    height: 100px;
+}
+.footer_contain{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.footer_contain span{
+    color: #ffffff;
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: 500;
+}
